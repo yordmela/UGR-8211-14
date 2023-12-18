@@ -4,70 +4,143 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio</title> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     </head> 
     <body>
+        <div class="container">
         <header>
-            <div>
-                <img src="./images/portfolioimg.png" alt="Logo" >
-                <p><strong>My portfolio</strong></p>
-            </div>
-            
-                <nav>
-                    <a href="./Home.html">Home</a>
-                    <a href="./Aboutme.html">Aboutme</a>
-                    <a href="./resume.html">Resume</a>
-                    <a href="./Contact.html">Contact</a>
-                    <button>☰</button>
-                </nav>
-                
-            
+            <nav class="navbar has-shadow is-white">
+                <div class="navbar-brand">
+                    <a class="navbar-item">
+                        <img src="./images/portfolioimg.png" alt="Logo">
+                                <p><strong>My portfolio</strong></p>
+                    </a>
+                    <a class="navbar-burger " id="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+                <div class="navbar-menu" id="nav-links">
+                    <div class="navbar-end">
+                        <a href="./Home.html" class="navbar-item">Home</a>
+                        <a href="./Aboutme.html" class="navbar-item">Aboutme</a>
+                        <a href="./resume.html" class="navbar-item">Resume</a>
+                        <a href="./Contact.html" class="navbar-item">Contact</a>
+                    </div>
+                </div>
+            </nav>
         </header>
-<main>
+        <div class="container has-text-centered">
+        <main>
 
-    <section id="photos">
-        <h2>My Photo</h2>
-        <figure>
-            
-            <img src="./images/mypic.png" alt="My Photo" >
-            <figcaption>Picture of me</figcaption>
-        </figure>
-        
-        <figure>
-            <img src="./images/clean.jpeg" alt="Project Image 1">
-            <figcaption>Peaceful environment</figcaption>
-        </figure>
-        <p>My portfolio is more than a collection of projects; it's a narrative of my professional journey enriched by moments of inspiration and collaboration. In the image titled "Peaceful Environment," I find serenity in a clean and organized space. This tranquility is not just a backdrop but a driving force for crafting efficient and elegant code.</p>
-        <figure>
-            <img src="./images/env't.jpeg" alt="Project Image 2">
-            <figcaption>Team work</figcaption>
-        </figure>
-        <p>The second snapshot, titled "Team Work," captures the essence of collaboration. In the dynamic world of software engineering, teamwork is the key to innovation. This image reflects the energy and synergy that arises when diverse minds come together to achieve a common goal. It's a testament to the belief that collective efforts lead to extraordinary results.</p>
-    </section>
-
-    <section id="audio">
-        <h2>Our disscussions</h2>
-        <audio controls>
-            
-            <source src="https://www.bensound.com/bensound-music/bensound-acousticbreeze.mp3" type="audio/mp3">
-            Your browser does not support the audio tag.
-        </audio>
-        <p>Listen to a disscussions of our latest project!</p>
-    </section>
-
-</main>
-<footer>
+            <section id="photos" class="has-text-centered is-hidden-desktop is-tablet">
+                <h2 class="subtitle">My Photo</h2>
+                <figure class="image is-128x128 mx-auto border is-rounded is-purple">
+                    <img src="./images/mypic.png" alt="My Photo" style="max-width: 128px; max-height: 128px;" class="is-rounded">
+                    <figcaption class="mt-2  mb-6">Picture of me</figcaption>
+                </figure>
+                <div class="columns is-mobile is-centered mt-6">
+                    <div class="column">
+                        <figure class="image is-128x128">
+                            <img src="./images/clean.jpeg" alt="Project Image 1">
+                            <figcaption>Peaceful environment</figcaption>
+                        </figure>
+                    </div>
+                    <p class="mt-2">My portfolio is more than a collection of projects; it's a narrative of my professional journey enriched by moments of inspiration and collaboration. In the image titled "Peaceful Environment," I find serenity in a clean and organized space. This tranquility is not just a backdrop but a driving force for crafting efficient and elegant code.</p>
+                </div>
+                <div class="columns is-mobile is-centered mt-4">
+                    <div class="column">
+                        <figure class="image is-128x128">
+                            <img src="./images/env't.jpeg" alt="Project Image 2">
+                            <figcaption>Teamwork</figcaption>
+                        </figure>
+                    </div>
+                    <p class="mt-2">The second snapshot, titled "Team Work," captures the essence of collaboration. In the dynamic world of software engineering, teamwork is the key to innovation. This image reflects the energy and synergy that arises when diverse minds come together to achieve a common goal. It's a testament to the belief that collective efforts lead to extraordinary results.</p>
+                </div>
+                <section id="audio" class="mt-4">
+                    <h2 class="has-text-centered">Our Discussions</h2>
+                    <div class="columns is-centered">
+                        <div class="column is-full">
+                            <audio controls style="width: 100%;">
+                                <source src="https://www.bensound.com/bensound-music/bensound-acousticbreeze.mp3" type="audio/mp3">
+                                Your browser does not support the audio tag.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="columns is-centered">
+                        <div class="column is-full">
+                            <audio controls style="width: 100%;">
+                                <source src="https://www.bensound.com/bensound-music/bensound-acousticbreeze.mp3" type="audio/mp3">
+                                Your browser does not support the audio tag.
+                            </audio>
+                        </div>
+                    </div>
+                    <p class="mt-2 has-text-centered">Listen to a discussion of our latest project!</p>
+                </section>
+            </section>
     
-  
-    <div>
-      <p>copyright 	&#169;2023 All Rights Reserved</p>
+            <section id="photos" class="has-text-centered is-desktop is-hidden-mobile is-hidden-tablet-only mt-4">
+                <h2 class="subtitle ">My Photo</h2>
+                <figure class="image is-128x128 mx-auto border is-rounded is-purple">
+                    <img src="./images/mypic.png" alt="My Photo" style="max-width: 128px; max-height: 128px;" class="is-rounded">
+                    <figcaption class="mt-2">Picture of me</figcaption>
+                </figure>
+                <div class="columns is-mobile is-centered mt-6">
+                    <div class="column">
+                        <figure class="image is-128x128">
+                            <img src="./images/clean.jpeg" alt="Project Image 1">
+                            <figcaption>Peaceful environment</figcaption>
+                        </figure>
+                    </div>
+                    <p class="mt-2">My portfolio is more than a collection of projects; it's a narrative of my professional journey enriched by moments of inspiration and collaboration. In the image titled "Peaceful Environment," I find serenity in a clean and organized space. This tranquility is not just a backdrop but a driving force for crafting efficient and elegant code.</p>
+                    <div class="column">
+                        <figure class="image is-128x128">
+                            <img src="./images/env't.jpeg" alt="Project Image 2">
+                            <figcaption>Teamwork</figcaption>
+                        </figure>
+                    </div>
+                    <p class="mt-2">The second snapshot, titled "Team Work," captures the essence of collaboration. In the dynamic world of software engineering, teamwork is the key to innovation. This image reflects the energy and synergy that arises when diverse minds come together to achieve a common goal. It's a testament to the belief that collective efforts lead to extraordinary results.</p>
+                </div>
+            </section>
+    
+            <section id="audio" class="mt-6 is-hidden-mobile is-hidden-tablet-only is-desktop">
+                <h2 class="has-text-centered">Our Discussions</h2>
+                <div class="columns is-desktop is-centered">
+                    <div class="column is-half-desktop">
+                        <audio controls style="width: 100%;">
+                            <source src="https://www.bensound.com/bensound-music/bensound-acousticbreeze.mp3" type="audio/mp3">
+                            Your browser does not support the audio tag.
+                        </audio>
+                    </div>
+                    <div class="column is-half-desktop">
+                        <audio controls style="width: 100%;">
+                            <source src="https://www.bensound.com/bensound-music/bensound-acousticbreeze.mp3" type="audio/mp3">
+                            Your browser does not support the audio tag.
+                        </audio>
+                    </div>
+                </div>
+                <p class="mt-2 has-text-centered">Listen to a discussion of our latest project!</p>
+            </section>
+        </main>
     </div>
-    <div>
-        <a href="https://www.instagram.com/yord_mele/#"><img src="./images/insta.png" alt="Instagram_icon" ></a>
-        <a href="https://www.youtube.com/@goodengineer2015"><img src="./images/youtube1.png" alt="Youtube_icon"  ></a>
-        <a href="https://www.linkedin.com/in/yordanos-melaku-9a660a252"><img src="./images/linkdin1.png" alt="linkedin_icon"  ></a>
-        <a href="https://telegram.org/"><img src="./images/telegram.png" alt="telegram_icon" ></a>
-      </div>
-</footer>
+    <footer class="footer">
+        <div class="content has-text-centered">
+        <div>
+            <p>copyright &#169;2023 All Rights Reserved</p>
+        </div>
+        <div class="mt-3">
+            <a href="https://www.instagram.com/yord_mele/#" class="mr-6"><img src="./images/insta.png" alt="Instagram_icon"></a>
+            <a href="https://www.youtube.com/@goodengineer2015" class="mr-6"><img src="./images/youtube1.png" alt="Youtube_icon"></a>
+            <a href="https://www.linkedin.com/in/yordanos-melaku-9a660a252" class="mr-6"><img src="./images/linkdin1.png" alt="linkedin_icon"></a>
+            <a href="https://telegram.org/"><img src="./images/telegram.png" alt="telegram_icon"></a>
+        </div>
+        </div>
+    </footer>
 
+
+
+</div>
+<script src="./js/index.js"></script>
 </body>
 </html>

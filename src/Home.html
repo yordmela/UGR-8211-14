@@ -4,29 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 <body>
+    <div class="container">
+<div>
 
-
-<header>
-    <div>
-        <img src="./images/portfolioimg.png" alt="Logo" >
-        <p><strong>My portfolio</strong></p>
-    </div>
-    <nav>
-        <a href="./Aboutme.html">Aboutme</a>
-        <a href="./portfolio.html">Portfolio</a>
-        <a href="./resume.html">Resume</a>
-        <a href="./Contact.html">Contact</a>
-        
-        <button>☰</button>
-    </nav>
-    
-    
-</header>
-
+    <header>
+        <nav class="navbar has-shadow is-white">
+            <div class="navbar-brand">
+                <a class="navbar-item">
+                    <img src="./images/portfolioimg.png" alt="Logo">
+                            <p><strong>My portfolio</strong></p>
+                </a>
+                <a class="navbar-burger " id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+            <div class="navbar-menu" id="nav-links">
+                <div class="navbar-end">
+                    <a href="./Aboutme.html" class="navbar-item">Aboutme</a>
+                    <a href="./portfolio.html" class="navbar-item">Portfolio</a>
+                    <a href="./resume.html" class="navbar-item">Resume</a>
+                    <a href="./Contact.html" class="navbar-item">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container has-text-centered">
 <main>
-    <h1>Welcome to My Portfolio</h1>
+    <h1 class="title">Welcome to My Portfolio</h1>
     <div>
    
        
@@ -51,76 +60,146 @@
     
     
 </div>
-    <section>
-        <h2>Projects</h2>
-        <figure>
-            <img src="./images/todoapp.png" alt="Project 1">
-            <figcaption><strong>Project 1:</strong> A Productivity Companion</figcaption>
-        </figure>
-        <div>
-        <ul>
-            <li>Intuitive User Interface: A clean and user-friendly interface makes task management a breeze.</li>
-            <li>Task Categories: Easily categorize tasks to prioritize and organize your workload.</li>
-            <li>Completion Tracking: Mark tasks as complete to track your progress and accomplishments.</li>
-            <li>Responsive Design: Access your to-do list seamlessly on various devices.</li>
-        </ul>
-    </div>
-        <figure>
-            <img src="./images/cssgrid.png" alt="Project 2" >
-            <figcaption><strong>CSS Grid Practice Project:</strong> Mastering Layouts with Precision</figcaption>
-        </figure>
-        <div>
-        <ul>
-            <li>Grid Layout Mastery: The project focused on implementing complex grid structures to achieve desired layouts.</li>
-            <li>Responsive Design: Utilized CSS Grid to create responsive designs that adapt seamlessly to various screen sizes.</li>
-            <li>Visual Precision: Explored grid-gap, grid-template-areas, and other properties to fine-tune the visual presentation of content.</li>
-            <li>Flexibility and Creativity: Leveraged CSS Grid to create unique and dynamic layouts that enhance user experience.</li>
-        </ul>
+
+<section>
+    <h2 class="has-text-centered subtitle mb-6 mt-6">Projects</h2>
+    
+    <!-- For Desktop: Figures 1 and 2 on the same line, Figures 3 and 4 on another line -->
+    <div class="is-desktop is-hidden-mobile is-hidden-tablet-only">
+        <div class="media columns is-centered">
+            <figure class="media-left column is-narrow">
+                <img src="./images/todoapp.png" alt="Project 1" class="image is-128x128">
+            </figure>
+            <div class="media-content column">
+                <p class="image-caption"><strong>Project 1:</strong> A Productivity Companion</p>
+                <ul>
+                    <li>Intuitive User Interface: A clean and user-friendly interface makes task management a breeze.</li>
+                    <li>Task Categories: Easily categorize tasks to prioritize and organize your workload.</li>
+                </ul>
+            </div>
+
+            <figure class="media-left column is-narrow">
+                <img src="./images/cssgrid.png" alt="Project 2" class="image is-128x128">
+            </figure>
+            <div class="media-content column">
+                <p class="image-caption"><strong>CSS Grid Practice Project:</strong> Mastering Layouts with Precision</p>
+                <ul>
+                    <li>Grid Layout Mastery: The project focused on implementing complex grid structures to achieve desired layouts.</li>
+                    <li>Responsive Design: Utilized CSS Grid to create responsive designs that adapt seamlessly to various screen sizes.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="is-desktop">
+            <div class="media columns is-centered">
+        <div class="media columns is-centered">
+            <figure class="media-left column is-narrow">
+                <img src="./images/portfolioproject.png" alt="Project 3" class="image is-128x128">
+            </figure>
+            <div class="media-content column">
+                <p class="image-caption"><strong>Portfolio Project:</strong> Crafting My Digital Presence</p>
+                <ul>
+                    <li>Personal Branding: The portfolio is designed to represent my personal brand, conveying my skills, values, and unique approach to problem-solving.</li>
+                    <li>Responsive Design: Employed responsive web design principles to ensure an optimal viewing experience across various devices and screen sizes.</li>
+                </ul>
+            </div>
         </div>
 
-<figure>
-    <img src="./images/portfolioproject.png" alt="Project 2" >
-    <figcaption> <strong>Portfolio Project:</strong> Crafting My Digital Presence</figcaption>
-</figure>
-<div>
-    <ul>
-        <li>Personal Branding: The portfolio is designed to represent my personal brand, conveying my skills, values, and unique approach to problem-solving.</li>
-        <li>Responsive Design: Employed responsive web design principles to ensure an optimal viewing experience across various devices and screen sizes.</li>
-        <li>Content Showcase: Each section of the portfolio highlights specific aspects, including projects, skills, and a glimpse into my professional journey.</li>
-        <li>Accessibility: Prioritized accessibility to ensure that the portfolio is inclusive and usable for all visitors.</li>
-    </ul>
+        <div class="media columns is-centered">
+            <figure class="media-left column is-narrow">
+                <img src="./images/tindog.png" alt="Project 4" class="image is-128x128">
+            </figure>
+            <div class="media-content column">
+                <p class="image-caption"><strong>Tin Dog Project:</strong> Connecting Pups and Owners in Style</p>
+                <ul>
+                    <li>Static Interactivity: Achieved a dynamic feel without JavaScript, using CSS animations and transitions for visual appeal.</li>
+                    <li>Responsive Design: Ensured a seamless experience for users on both desktop and mobile devices through responsive web design.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>
-<figure>
-    <img src="./images/tindog.png" alt="Project 2" >
-    <figcaption> <strong>Tin Dog Project:</strong> Connecting Pups and Owners in Style</figcaption>
-</figure>
-<div>
-    <ul>
-        <li>Static Interactivity: Achieved a dynamic feel without JavaScript, using CSS animations and transitions for visual appeal.</li>
-        <li>Responsive Design: Ensured a seamless experience for users on both desktop and mobile devices through responsive web design.</li>
-        <li>Stylish UI: Incorporated modern design principles to create a user-friendly and aesthetically pleasing interface.</li>
-        <li>Functional Sections: Designed intuitive sections for features like testimonials, pricing, and a sign-up form to engage visitors.</li>
-    </ul>
 </div>
 
+    <!-- For Other Sizes: Each figure on a separate line -->
+    <div class="is-mobile is-hidden-desktop">
+        <!-- Figure 1 -->
+        <figure class="media columns is-centered">
+            <div class="media-left column is-narrow">
+                <img src="./images/todoapp.png" alt="Project 1" class="image is-128x128">
+            </div>
+            <div class="media-content column">
+                <p class="image-caption"><strong>Project 1:</strong> A Productivity Companion</p>
+                <ul>
+                    <li>Intuitive User Interface: A clean and user-friendly interface makes task management a breeze.</li>
+                    <li>Task Categories: Easily categorize tasks to prioritize and organize your workload.</li>
+                </ul>
+            </div>
+        </figure>
+
+        <!-- Figure 2 -->
+        <figure class="media columns is-centered">
+            <div class="media-left column is-narrow">
+                <img src="./images/cssgrid.png" alt="Project 2" class="image is-128x128">
+            </div>
+            <div class="media-content column">
+                <p class="image-caption"><strong>CSS Grid Practice Project:</strong> Mastering Layouts with Precision</p>
+                <ul>
+                    <li>Grid Layout Mastery: The project focused on implementing complex grid structures to achieve desired layouts.</li>
+                    <li>Responsive Design: Utilized CSS Grid to create responsive designs that adapt seamlessly to various screen sizes.</li>
+                </ul>
+            </div>
+        </figure>
+
+        <!-- Figure 3 -->
+        <figure class="media columns is-centered">
+            <div class="media-left column is-narrow">
+                <img src="./images/portfolioproject.png" alt="Project 3" class="image is-128x128">
+            </div>
+            <div class="media-content column">
+                <p class="image-caption"><strong>Portfolio Project:</strong> Crafting My Digital Presence</p>
+                <ul>
+                    <li>Personal Branding: The portfolio is designed to represent my personal brand, conveying my skills, values, and unique approach to problem-solving.</li>
+                    <li>Responsive Design: Employed responsive web design principles to ensure an optimal viewing experience across various devices and screen sizes.</li>
+                </ul>
+            </div>
+        </figure>
+
+        <!-- Figure 4 -->
+        <figure class="media columns is-centered">
+            <div class="media-left column is-narrow">
+                <img src="./images/tindog.png" alt="Project 4" class="image is-128x128">
+            </div>
+            <div class="media-content column">
+                <p class="image-caption"><strong>Tin Dog Project:</strong> Connecting Pups and Owners in Style</p>
+                <ul>
+                    <li>Static Interactivity: Achieved a dynamic feel without JavaScript, using CSS animations and transitions for visual appeal.</li>
+                    <li>Responsive Design: Ensured a seamless experience for users on both desktop and mobile devices through responsive web design.</li>
+                </ul>
+            </div>
+        </figure>
+    </div>
+</section>
     </section>
+    
 
     
 </main>
-
+</div>
 <!-- Footer Section -->
-<footer>
-  
+<footer class="footer">
+    <div class="content has-text-centered">
     <div>
-      <p>copyright 	&#169;2023 All Rights Reserved</p>
+        <p>copyright &#169;2023 All Rights Reserved</p>
     </div>
-    <div>
-      <a href="https://www.instagram.com/yord_mele/#"><img src="./images/insta.png" alt="Instagram_icon" ></a>
-      <a href="https://www.youtube.com/@goodengineer2015"><img src="./images/youtube1.png" alt="Youtube_icon"  ></a>
-      <a href="https://www.linkedin.com/in/yordanos-melaku-9a660a252"><img src="./images/linkdin1.png" alt="linkedin_icon"  ></a>
-      <a href="https://telegram.org/"><img src="./images/telegram.png" alt="telegram_icon" ></a>
+    <div class="mt-3">
+        <a href="https://www.instagram.com/yord_mele/#" class="mr-6"><img src="./images/insta.png" alt="Instagram_icon"></a>
+        <a href="https://www.youtube.com/@goodengineer2015" class="mr-6"><img src="./images/youtube1.png" alt="Youtube_icon"></a>
+        <a href="https://www.linkedin.com/in/yordanos-melaku-9a660a252" class="mr-6"><img src="./images/linkdin1.png" alt="linkedin_icon"></a>
+        <a href="https://telegram.org/"><img src="./images/telegram.png" alt="telegram_icon"></a>
+    </div>
     </div>
 </footer>
-
+</div>
+<script src="./js/index.js"></script>
 </body>
 </html>

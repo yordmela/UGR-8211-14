@@ -3,30 +3,41 @@
     <head> 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About me</title> </head> 
-        <body>
-
-    <header>
-        <nav>
-            <div>
-                <img src="./images/portfolioimg.png" alt="Logo" >
-                <p><strong>My portfolio</strong></p>
-            </div>
-            <nav>
-                <a href="./Home.html">Home</a>
-                <a href="./portfolio.html">Portfolio</a>
-                <a href="./resume.html">Resume</a>
-                <a href="./Contact.html">Contact</a>
-                <button>☰</button>
-            </nav>
+        <title>About me</title> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    </head> 
+        <body >
+            <div class="container">
+            <header>
+                <nav class="navbar has-shadow is-white">
+                    <div class="navbar-brand">
+                        <a class="navbar-item">
+                            <img src="./images/portfolioimg.png" alt="Logo">
+                                    <p><strong>My portfolio</strong></p>
+                        </a>
+                        <a class="navbar-burger " id="burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                    <div class="navbar-menu" id="nav-links">
+                        <div class="navbar-end">
+                            <a href="./Home.html" class="navbar-item">Home</a>
+                            <a href="./portfolio.html" class="navbar-item">Portfolio</a>
+                            <a href="./resume.html" class="navbar-item">Resume</a>
+                            <a href="./Contact.html" class="navbar-item">Contact</a>
+                        </div>
+                    </div>
+                </nav>
+            </header>
             
-        </nav>
-    </header>
+            <div class="container has-text-centered">  
     
     <main>
-        <h1>About Me</h1>
+        <h1 class="title">About Me</h1>
         <article>
-            <h2>Who is Yordanos?</h2>
+            <h2 class="subtitle">Who is Yordanos?</h2>
             <div>
                 
                 <p>
@@ -38,12 +49,19 @@
             </div>
     
             <section>
-                <h2>Watch My Journey</h2>
+                <h2 class="subtitle">Watch My Journey</h2>
                 
-                <figure>
-                    <iframe src="https://www.youtube.com/embed/b_ha4OyIv0I?si=oUzZohp1BtXKzKyo" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <figure class="mb-4">
+                    <iframe
+                        src="https://www.youtube.com/embed/b_ha4OyIv0I?si=oUzZohp1BtXKzKyo"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                        style="width: 90%; height:300px"
+                    ></iframe>
                     <figcaption>A video of my journey in software engineering</figcaption>
                 </figure>
+                
             </section>
             <section>
                 <h2>My Journey in software engineering</h2>
@@ -53,20 +71,23 @@
             </section>
         </article>
     </main>
-<footer>
-    
-  
-    
+</div>
+<footer class="footer">
+    <div class="content has-text-centered">
     <div>
-        <p>copyright 	&#169;2023 All Rights Reserved</p>
-      </div>
-      <div>
-          <a href="https://www.instagram.com/yord_mele/#"><img src="./images/insta.png" alt="Instagram_icon" ></a>
-          <a href="https://www.youtube.com/@goodengineer2015"><img src="./images/youtube1.png" alt="Youtube_icon"  ></a>
-          <a href="https://www.linkedin.com/in/yordanos-melaku-9a660a252"><img src="./images/linkdin1.png" alt="linkedin_icon"  ></a>
-          <a href="https://telegram.org/"><img src="./images/telegram.png" alt="telegram_icon" ></a>
-        </div>
+        <p>copyright &#169;2023 All Rights Reserved</p>
+    </div>
+    <div class="mt-3">
+        <a href="https://www.instagram.com/yord_mele/#" class="mr-6"><img src="./images/insta.png" alt="Instagram_icon"></a>
+        <a href="https://www.youtube.com/@goodengineer2015" class="mr-6"><img src="./images/youtube1.png" alt="Youtube_icon"></a>
+        <a href="https://www.linkedin.com/in/yordanos-melaku-9a660a252" class="mr-6"><img src="./images/linkdin1.png" alt="linkedin_icon"></a>
+        <a href="https://telegram.org/"><img src="./images/telegram.png" alt="telegram_icon"></a>
+    </div>
+    </div>
 </footer>
 
+    
+</div>
+<script src="./js/index.js"></script>
 </body>
 </html>

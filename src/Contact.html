@@ -4,60 +4,115 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact</title> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     </head>
     <body>
-
-    <header>
-        <div>
-            <img src="./images/portfolioimg.png" alt="Logo" >
-            <p><strong>My portfolio</strong></p>
-        </div>
-        <nav>
-            <a href="./Home.html">Home</a>
-            <a href="./Aboutme.html">Aboutme</a>
-            <a href="./resume.html">Resume</a>
-            <a href="./portfolio.html">Portfolio</a>
-            <button>☰</button>
-        </nav>
-        
-    </header>
+<div class="container">
+        <header>
+            <nav class="navbar has-shadow is-white">
+                <div class="navbar-brand">
+                    <a class="navbar-item">
+                        <img src="./images/portfolioimg.png" alt="Logo">
+                                <p><strong>My portfolio</strong></p>
+                    </a>
+                    <a class="navbar-burger " id="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+                <div class="navbar-menu" id="nav-links">
+                    <div class="navbar-end">
+                        <a href="./Home.html" class="navbar-item">Home</a>
+                        <a href="./portfolio.html" class="navbar-item">Portfolio</a>
+                        <a href="./resume.html" class="navbar-item">Resume</a>
+                        <a href="./Aboutme.html" class="navbar-item">Aboutme</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
     
-    <section >
-        
-    <h2>Contact Me</h2>
-
-  
-    <div>
-        <h3>Let's connect</h3>
-    <form>
-        <input type="text" id="name" name="name" placeholder="Your name">
-        <br>
-        <input type="email" id="email" name="email" placeholder="Your email">
-        <br>
-        <input type="tel" id="phone" name="phone" placeholder="Your phone number">
-        <br>
        
-        <textarea id="message" name="message" placeholder="Type your message here"></textarea>
-        <br>
-        
-        <button type="submit">Submit</button>
-    </form>
-</div>
 
 
-</section>
-
-<footer>
+        <section class="section">
+            <div class="container">
+                <h2 class="title">Contact Me</h2>
     
+                <div class="columns">
+                    <div class="column">
+                        <div class="box box is-hidden-mobile">
+                            <div class="container__form-section_social-media">
+                                <h3>On my Telegram</h3>
+                                <p><a href="https://telegram.org/">My telegram</a></p>
+                                <h3>On my Instagram</h3>
+                                <p><a href="https://www.instagram.com/yord_mele/#">My instagram</a></p>
+                                <h3>On my Linkedin</h3>
+                                <p><a href="https://www.linkedin.com/in/yordanos-melaku-9a660a252">My linkedin</a></p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="column is-two-thirds">
+                        <div class="box">
+                            <h3 class="subtitle">Let's connect</h3>
+                            <form>
+                                <form>
+                                    <div class="field">
+                                        <label class="label">Your name</label>
+                                        <div class="control">
+                                            <input type="text" id="name" name="name" class="input" placeholder="Your name">
+                                        </div>
+                                    </div>
+                
+                                    <div class="field">
+                                        <label class="label">Your email</label>
+                                        <div class="control">
+                                            <input type="email" id="email" name="email" class="input" placeholder="Your email">
+                                        </div>
+                                    </div>
+                
+                                    <div class="field">
+                                        <label class="label">Your phone number</label>
+                                        <div class="control">
+                                            <input type="tel" id="phone" name="phone" class="input" placeholder="Your phone number">
+                                        </div>
+                                    </div>
+                
+                                    <div class="field">
+                                        <label class="label">Type your message here</label>
+                                        <div class="control">
+                                            <textarea id="message" name="message" class="textarea" placeholder="Type your message here"></textarea>
+                                        </div>
+                                    </div>
+                
+                                    <div class="control">
+                                        <button type="submit" class="button is-primary ">Submit</button>
+                                    </div>
+                                </form>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+<footer class="footer">
+    <div class="content has-text-centered">
     <div>
-        <p>copyright 	&#169;2023 All Rights Reserved</p>
-      </div>
-      <div>
-          <a href="https://www.instagram.com/yord_mele/#"><img src="./images/insta.png" alt="Instagram_icon" ></a>
-          <a href="https://www.youtube.com/@goodengineer2015"><img src="./images/youtube1.png" alt="Youtube_icon"  ></a>
-          <a href="https://www.linkedin.com/in/yordanos-melaku-9a660a252"><img src="./images/linkdin1.png" alt="linkedin_icon"  ></a>
-          <a href="https://telegram.org/"><img src="./images/telegram.png" alt="telegram_icon" ></a>
-        </div>
+        <p>copyright &#169;2023 All Rights Reserved</p>
+    </div>
+    <div class="mt-3">
+        <a href="https://www.instagram.com/yord_mele/#" class="mr-6"><img src="./images/insta.png" alt="Instagram_icon"></a>
+        <a href="https://www.youtube.com/@goodengineer2015" class="mr-6"><img src="./images/youtube1.png" alt="Youtube_icon"></a>
+        <a href="https://www.linkedin.com/in/yordanos-melaku-9a660a252" class="mr-6"><img src="./images/linkdin1.png" alt="linkedin_icon"></a>
+        <a href="https://telegram.org/"><img src="./images/telegram.png" alt="telegram_icon"></a>
+    </div>
+    </div>
 </footer>
+</div>
+<script src="./js/index.js"></script>
 </body>
 </html>
