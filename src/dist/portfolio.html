@@ -1,0 +1,115 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title> 
+        <link rel="stylesheet" href="output.css">
+    </head> 
+    <body>
+        <div class="container-fluid mx-auto">
+        <header class="mb-8 px-4">
+                   
+            <div class="flex items-center justify-between py-4">
+                <div class="flex items-center">
+                    <img src="./images/portfolioimg.png" alt="Logo" class="mr-2">
+                    <p class="font-bold text-xl">My Portfolio</p>
+                </div>
+                
+                <div class="lg:hidden">
+                    <button id="burger" class="lg:hidden">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+                
+              
+                <nav class="hidden lg:flex items-center justify-end" id="nav-links">
+                    <a href="./Home.html" class="hover:text mr-4">Home</a>
+                    <a href="./Contact.html" class="hover:text mr-4">Contact</a>
+                    <a href="./resume.html" class="hover:text mr-4">Resume</a>
+                    <a href="./Aboutme.html" class="hover:text mr-4">Aboutme</a>
+                </nav>
+            </div>
+        </header>
+     <!-- For mobile -->
+<section id="photos" class="text-center md:flex md:flex-col items-center">
+    <h2 class="subtitle">My Photo</h2>
+    <div class="flex flex-col items-center">
+        <figure class="mb-2">
+            <img src="./images/mypic.png" alt="My Photo" class="rounded-full w-24 h-24 md:w-24 md:h-24 lg:w-32 lg:h-32">
+            <figcaption class="mt-2">Picture of me</figcaption>
+        </figure>
+    </div>
+
+    <div class="grid grid-cols-1 gap-6 mt-4">
+        <div class="flex mb-2 items-center md:w-full">
+            <figure class="mr-2 md:w-1/2">
+                <img src="./images/clean.jpeg" alt="Project Image 1" class="w-full h-auto">
+                <figcaption class="mt-2">Peaceful environment</figcaption>
+            </figure>
+            <p class="mt-2 text-left md:w-1/2 md:pl-4">
+                My portfolio is more than a collection of projects; it's a narrative of my professional journey enriched by moments of inspiration and collaboration. In the image titled "Peaceful Environment," I find serenity in a clean and organized space. This tranquility is not just a backdrop but a driving force for crafting efficient and elegant code.
+            </p>
+        </div>
+
+        <div class="flex mb-2 items-center md:w-full">
+            <figure class="mr-2 md:w-1/2">
+                <img src="./images/env't.jpeg" alt="Project Image 2" class="w-full h-auto">
+                <figcaption class="mt-2">Teamwork</figcaption>
+            </figure>
+            <p class="mt-2 text-left md:w-1/2 md:pl-4">
+                The second snapshot, titled "Team Work," captures the essence of collaboration. In the dynamic world of software engineering, teamwork is the key to innovation. This image reflects the energy and synergy that arises when diverse minds come together to achieve a common goal. It's a testament to the belief that collective efforts lead to extraordinary results.
+            </p>
+        </div>
+    </div>
+
+    <section id="audio" class="mt-4 w-full">
+        <h2 class="text-center">Our Discussions</h2>
+        <div class="grid grid-cols-1 gap-6">
+            <div class="col-span-full">
+                <audio controls style="width: 100%;">
+                    <source src="https://www.bensound.com/bensound-music/bensound-acousticbreeze.mp3" type="audio/mp3">
+                    Your browser does not support the audio tag.
+                </audio>
+            </div>
+            <div class="col-span-full">
+                <audio controls style="width: 100%;">
+                    <source src="https://www.bensound.com/bensound-music/bensound-acousticbreeze.mp3" type="audio/mp3">
+                    Your browser does not support the audio tag.
+                </audio>
+            </div>
+        </div>
+        <p class="mt-2 text-center">Listen to a discussion of our latest project!</p>
+    </section>
+</section>
+
+        
+        
+<footer class="footer mt-8">
+    <div class="content text-center">
+        <div class="flex justify-center items-center mb-2">
+            <p class="mb-2 mx-auto text-center">Copyright &#169;2023 All Rights Reserved</p>
+        </div>
+        
+        <div class="flex justify-around mt-3">
+            <a href="https://www.instagram.com/yord_mele/#" class="hover:text">
+                <img src="./images/insta.png" alt="Instagram_icon">
+            </a>
+            <a href="https://www.youtube.com/@goodengineer2015" class="hover:text">
+                <img src="./images/youtube1.png" alt="Youtube_icon">
+            </a>
+            <a href="https://www.linkedin.com/in/yordanos-melaku-9a660a252" class="hover:text">
+                <img src="./images/linkdin1.png" alt="linkedin_icon">
+            </a>
+            <a href="https://telegram.org/" class="hover:text">
+                <img src="./images/telegram.png" alt="telegram_icon">
+            </a>
+        </div>
+    </div>
+</footer>
+</div>
+<script src="./js/index.js"></script>
+</body>
+</html>
