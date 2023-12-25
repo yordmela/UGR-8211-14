@@ -4,60 +4,117 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact</title> 
+        <link rel="stylesheet" href="./css/main.css">
     </head>
-    <body>
+    <body class="container">
 
-    <header>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <div class="navbar-brand">
+                        <img src="./images/portfolioimg.png" alt="Logo"><strong>My portfolio</strong>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent " aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="resume.html">Resume</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Aboutme.html" tabindex="-1" aria-disabled="true">Aboutme</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+    
+        <section class="section mb-4">
+            <div class="container">
+                <h2 class="title mt-4 mb-4">Contact Me</h2>
+        
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="box d-none d-md-block">
+                            <div class="container__form-section_social-media">
+                                <h3>On my Telegram</h3>
+                                <p><a href="https://telegram.org/">My Telegram</a></p>
+                                <h3>On my Instagram</h3>
+                                <p><a href="https://www.instagram.com/yord_mele/#">My Instagram</a></p>
+                                <h3>On my Linkedin</h3>
+                                <p><a href="https://www.linkedin.com/in/yordanos-melaku-9a660a252">My Linkedin</a></p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-8 ">
+                        <div class="box form-control">
+                            <h3 class="subtitle">Let's connect</h3>
+                            <form>
+                                <div class="form-group">
+                                    <label for="name"></label>
+                                    <input type="text" id="name" name="name" class="form-control" placeholder="Your name">
+                                </div>
+        
+                                <div class="form-group">
+                                    <label for="email"></label>
+                                    <input type="email" id="email" name="email" class="form-control" placeholder="Your email">
+                                </div>
+        
+                                <div class="form-group">
+                                    <label for="phone"></label>
+                                    <input type="tel" id="phone" name="phone" class="form-control" placeholder="Your phone number">
+                                </div>
+        
+                                <div class="form-group">
+                                    <label for="message"></label>
+                                    <textarea id="message" name="message" class="form-control" placeholder="Type your message here"></textarea>
+                                </div>
+        
+                                
+                                <div class=" text-center mt-4">
+                                    
+                            
+                                      <a href="#" class="btn btn-primary ">Submit</a>
+                                  
+                                  </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+<footer class="bg-light text-center py-3">
+    <div class="container">
         <div>
-            <img src="./images/portfolioimg.png" alt="Logo" >
-            <p><strong>My portfolio</strong></p>
+            <p>Copyright &#169;2023 All Rights Reserved</p>
         </div>
-        <nav>
-            <a href="./Home.html">Home</a>
-            <a href="./Aboutme.html">Aboutme</a>
-            <a href="./resume.html">Resume</a>
-            <a href="./portfolio.html">Portfolio</a>
-            <button>☰</button>
-        </nav>
-        
-    </header>
-    
-    <section >
-        
-    <h2>Contact Me</h2>
-
-  
-    <div>
-        <h3>Let's connect</h3>
-    <form>
-        <input type="text" id="name" name="name" placeholder="Your name">
-        <br>
-        <input type="email" id="email" name="email" placeholder="Your email">
-        <br>
-        <input type="tel" id="phone" name="phone" placeholder="Your phone number">
-        <br>
-       
-        <textarea id="message" name="message" placeholder="Type your message here"></textarea>
-        <br>
-        
-        <button type="submit">Submit</button>
-    </form>
-</div>
-
-
-</section>
-
-<footer>
-    
-    <div>
-        <p>copyright 	&#169;2023 All Rights Reserved</p>
-      </div>
-      <div>
-          <a href="https://www.instagram.com/yord_mele/#"><img src="./images/insta.png" alt="Instagram_icon" ></a>
-          <a href="https://www.youtube.com/@goodengineer2015"><img src="./images/youtube1.png" alt="Youtube_icon"  ></a>
-          <a href="https://www.linkedin.com/in/yordanos-melaku-9a660a252"><img src="./images/linkdin1.png" alt="linkedin_icon"  ></a>
-          <a href="https://telegram.org/"><img src="./images/telegram.png" alt="telegram_icon" ></a>
+        <div class="mt-3 d-flex justify-content-around align-items-center">
+            <a href="https://www.instagram.com/yord_mele/#" class="mr-3"><img src="./images/insta.png"
+                    alt="Instagram_icon"></a>
+            <a href="https://www.youtube.com/@goodengineer2015" class="mr-3"><img src="./images/youtube1.png"
+                    alt="Youtube_icon"></a>
+            <a href="https://www.linkedin.com/in/yordanos-melaku-9a660a252" class="mr-3"><img
+                    src="./images/linkdin1.png" alt="LinkedIn_icon"></a>
+            <a href="https://telegram.org/"><img src="./images/telegram.png" alt="Telegram_icon"></a>
         </div>
+    </div>
 </footer>
+
+<script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
